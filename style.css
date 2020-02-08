@@ -7,16 +7,19 @@
 }
 
 body {
-    background: url(./images/bg.jpg);
+    background: #030707 url(images/bg.jpg);
     font-size: 12pt;
     line-height: 1.75em;
-
 }
 
 
 ul li {
     list-style: none;
+    padding: 10px 0 2px 0;
+}
 
+ul.dash-delimetr li:not(:first-child) {
+    border-top: dashed 1px #bfbfbf;
 }
 
 ul li a {
@@ -24,7 +27,7 @@ ul li a {
 }
 
 a {
-    color: #d9dada;
+    color: white;
 }
 
 ul li a:hover {
@@ -66,13 +69,19 @@ p {
 header {
     display: flex;
     align-items: center;
-    color: #ffffff;
     position: relative;
     padding: 30px;
 }
 
-header .logo {
+header .logo a {
     margin-right: 150px;
+    color: white;
+}
+
+header .logo a:hover {
+    margin-right: 150px;
+    color: white;
+    text-decoration: none;
 }
 
 header nav {
@@ -125,10 +134,14 @@ section {
 }
 
 aside {
-    width: 240px;
+    width: 260px;
     padding: 30px;
     color: #959797;
 
+}
+
+aside h3 {
+    color: #ffffff
 }
 
 .side-links {
@@ -150,6 +163,11 @@ main h3 {
 }
 
 main a {
+    color: #262626;
+
+}
+
+main a:hover {
     color: #262626;
 }
 
@@ -174,18 +192,29 @@ main a {
 /* footer */
 footer {
     display: flex;
-    background-color: rgb(173, 219, 234);
+    background: #3ca9cd;
+    color: rgb(173, 219, 234);
     padding: 30px;
 
-    color: white;
+
 }
 
 footer .link {
-    flex: 4;
-
+    width: 250px;
+    color: #e2f2f8;
+    line-height: 2.75em;
+    padding: 10px 0 2px 0;
+    margin-right: 4em;
 }
 
 footer .info {
-    margin-left: 20px;
     flex: 8;
+}
+
+footer h3 {
+    color: #ffffff;
+}
+
+footer p {
+    line-height: 1.5em;
 }
